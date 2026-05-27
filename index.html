@@ -1,0 +1,79 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AZL Consulting and Trading | Strategic Accounting &amp; Advisory</title>
+    <meta name="description" content="Supporting individuals, private businesses and growing enterprises with accounting, tax, audit and corporate advisory services.">
+    <meta name="keywords" content="Accounting, Tax, Audit, Business Advisory, Sydney">
+
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react@18/umd/react.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://resource.trickle.so/vendor_lib/unpkg/lucide-static@0.516.0/font/lucide.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet">
+
+    <style type="text/tailwindcss">
+        @layer theme {
+        :root {
+            --primary: #0B1F3A;
+            --secondary: #FFFFFF;
+            --accent: #C8A96B;
+            --accent-hover: #b5985b;
+            --text-main: #333333;
+            --text-muted: #666666;
+            --bg-light: #F8F9FA;
+        }
+    }
+
+    @layer base {
+        body {
+            font-family: 'Inter', sans-serif;
+            color: var(--text-main);
+            background-color: var(--bg-light);
+            -webkit-font-smoothing: antialiased;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+            color: var(--primary);
+        }
+    }
+
+    @layer components {
+        .btn-primary {
+            @apply inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-[var(--accent)] hover:bg-[var(--accent-hover)] transition-colors duration-300 shadow-sm;
+        }
+        .btn-outline {
+            @apply inline-flex items-center justify-center px-6 py-3 border-2 border-[var(--primary)] text-base font-medium rounded-md text-[var(--primary)] bg-transparent hover:bg-[var(--primary)] hover:text-white transition-colors duration-300;
+        }
+        .btn-outline-white {
+            @apply inline-flex items-center justify-center px-6 py-3 border-2 border-white text-base font-medium rounded-md text-white bg-transparent hover:bg-white hover:text-[var(--primary)] transition-colors duration-300;
+        }
+        .card {
+            @apply bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-8 border border-gray-100;
+        }
+    }
+    </style>
+    <meta name="twitter:title" content="AZL Consulting and Trading | Strategic Accounting &amp; Advisory">
+    <meta name="twitter:description" content="Supporting individuals, private businesses and growing enterprises with accounting, tax, audit and corporate advisory services.">
+    <meta property="og:title" content="AZL Consulting and Trading | Strategic Accounting &amp; Advisory">
+    <meta property="og:description" content="Supporting individuals, private businesses and growing enterprises with accounting, tax, audit and corporate advisory services.">
+</head>
+
+<body class="flex flex-col min-h-screen">
+    <div id="root"></div>
+
+    <!-- Shared Components -->
+    <script type="text/babel" src="components/Header.js"></script>
+    <script type="text/babel" src="components/Offices.js"></script>
+    <script type="text/babel" src="components/Footer.js"></script>
+
+    <!-- Entry Point -->
+    <script type="text/babel" src="app.js"></script>
+
+
+
+</body>
+
+</html>
